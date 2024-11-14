@@ -1,17 +1,14 @@
 # Ma 513 - Hands-on Machine Learning for Cybersecurity
-Named Entity Recognition Competition for Cybersecurity at IPSA.
-Context of the project...
+As part of the Statistical Learning course at IPSA, this project focuses on developing a system that automatically recognizes domain-specific entities. The project is framed as a Named Entity Recognition (NER) Competition for Cybersecurity at IPSA.
 
-
-### Task Description
-For background information on Named Entity Recognition, you can consult my dedicated [GitHub repository](https://github.com/AtillaKaanAlkan/Named-Entity-Recognition.git).
+For more detailed background information on Named Entity Recognition and to explore relevant resources, you can refer to my dedicated [GitHub repository](https://github.com/AtillaKaanAlkan/Named-Entity-Recognition.git).
 
 
 ### Dataset Description
 
 The dataset for [SemEval-2018 Task 8](https://aclanthology.org/S18-1113/), titled "Semantic Extraction from Cybersecurity Reports using Natural Language Processing (SecureNLP)," focuses on extracting meaningful cybersecurity information through Named Entity Recognition (NER). It aims to automatically identify and classify critical cybersecurity-related entities in text, such as malware, attacks, and threat actors, from technical cybersecurity documents. 
 
-As part of this Statistical Learning course at IPSA, the project aims to develop a model that will automatically recognize domain's entities. The datasets are in JSON Lines format (each line is a json dictionary). The datasets are formatted similarly to the CONLL2003 format. Each token is associated with an NER tag. The tags follow the "B-" and "I-" convention from the IOB2 syntax.
+ The datasets are in JSON Lines format (each line is a json dictionary). The datasets are formatted similarly to the CONLL2003 format. Each token is associated with an NER tag. The tags follow the "B-" and "I-" convention from the IOB2 syntax.
 
 Each entry consists of a dictionary with the following keys:
 
@@ -60,9 +57,9 @@ You will be ranked according to your predictions on the `NER-TESTING.jsonlines` 
    - Send your predictions file to the following email:  
      **atilla1.alkan@ipsa.fr**
 
-### Instructions for Participants
+### System Description Instructions
 
-You must provide a system description report (.pdf format) presenting the work. This involves explaining the problem, the possible solutions, and those you have chosen by presenting the strengths and weaknesses. Particular attention should be paid to the explanation of the considered algorithms. The report should consist of the following sections:
+You must provide a system description report (.pdf format) presenting your work and the experiments/models that gave the best results. This involves explaining the problem, the possible solutions, and those you have chosen by presenting the strengths and weaknesses. Particular attention should be paid to the explanation of the considered algorithms. The report should consist of the following sections:
 
 #### Data Exploration and Preprocessing 
 Please familiarize yourself with the dataset, i.e., examine it and understand the class distribution. Perform necessary preprocessing steps to prepare the texts for training a machine learning model. 
