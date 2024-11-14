@@ -1,7 +1,7 @@
 # Ma 513 - Hands-on Machine Learning for Cybersecurity
 Named Entity Recognition Competition for Cybersecurity at IPSA
 
-### Dataset Description
+### Dataset Description
 
 The dataset for SemEval-2018 Task 8, titled "Semantic Extraction from Cybersecurity Reports using Natural Language Processing (SecureNLP)," focuses on extracting meaningful cybersecurity information through Named Entity Recognition (NER). It aims to automatically identify and classify critical cybersecurity-related entities in text, such as malware, attacks, and threat actors, from technical cybersecurity documents. 
 As part of this Statistical Learning course at IPSA, the project aims to develop a model that will automatically recognize domain's entities.
