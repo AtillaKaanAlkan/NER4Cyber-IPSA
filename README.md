@@ -1,2 +1,2 @@
-# NER4Cyber-IPSA
+# Hands on Machine Learning for Cybersecurity
 Named Entity Recognition for Cybersecurity at IPSA
