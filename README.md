@@ -38,9 +38,27 @@ with open("path/to/corpus.jsonlines", 'r') as f:
     corpus_json = [json.loads(l) for l in list(f)]
 ```
 
-### Evaluation
+### NER Task Submission Instructions
 
-Submissions will be scored using the [CoNLL-2000 shared task seqeval F1-Score](https://github.com/chakki-works/seqeval) at the entity level. The baseline will be provided soon for this NER task. You will be evaluated and ranked according to your predictions on the NER-TESTING.jsonlines file. To do so, you can use the NER-TRAINING.jsonlines and NER-VALIDATION datasets, for training development sets. And, using your trained model you should construct a prediction file with the same format than the NER-TESTING.jsonlines file and send it to atilla1.alkan@ipsa.fr 
+Your submissions will be evaluated based on the F1-Score for named entity recognition (NER) at the entity level, using the CoNLL-2000 shared task metric via the `seqeval` library.
+
+##### Baseline Model
+A baseline model will be provided soon for reference in this NER task.
+
+##### Evaluation
+You will be ranked according to your predictions on the `NER-TESTING.jsonlines` file.
+
+###### Steps for Submission
+
+1. **Training and Development:**
+   - Use the `NER-TRAINING.jsonlines` and `NER-VALIDATION.jsonlines` datasets for training and development.
+
+2. **Model Predictions:**
+   - After training your model, generate a prediction file that follows the same format as the `NER-TESTING.jsonlines` file.
+
+3. **Submission:**
+   - Send your predictions file to the following email:  
+     **atilla1.alkan@ipsa.fr**
 
 ### Instructions for Participants
 
