@@ -40,37 +40,24 @@ with open("path/to/corpus.jsonlines", 'r') as f:
 
 ### Evaluation
 
-Submissions will be scored using the [CoNLL-2000 shared task seqeval F1-Score](https://github.com/chakki-works/seqeval) at the entity level. The baseline will be provided soon for this NER task.
+Submissions will be scored using the [CoNLL-2000 shared task seqeval F1-Score](https://github.com/chakki-works/seqeval) at the entity level. The baseline will be provided soon for this NER task. You will be evaluated and ranked according to your predictions on the NER-TESTING.jsonlines file. To do so, you can use the NER-TRAINING.jsonlines and NER-VALIDATION datasets, for training development sets. And, using your trained model you should construct a prediction file with the same format than the NER-TESTING.jsonlines file and send it to atilla1.alkan@ipsa.fr 
 
 ### Instructions for Participants
 
 You must provide a system description report (.pdf format) presenting the work. This involves explaining the problem, the possible solutions, and those you have chosen by presenting the strengths and weaknesses. Particular attention should be paid to the explanation of the considered algorithms. The report should consist of the following sections:
 
-#### Data Exploration and Preprocessing 
-Please familiarize yourself with the dataset, i.e., examine the SciX dataset and understand the class distribution. Perform necessary preprocessing steps to prepare the texts for training a machine learning model. 
+#### Data Exploration and Preprocessing 
+Please familiarize yourself with the dataset, i.e., examine it and understand the class distribution. Perform necessary preprocessing steps to prepare the texts for training a machine learning model. 
 
-#### Model Selection and Experimental Settings
-Identify an appropriate architecture for this multi-label classification task. You can experiment with established architectures like Logistic Regression, Support Vector Machine, and Naive Bayes or propose a custom design. It would help if you justified your choice by providing reasoning for your choice of architecture (you can read papers in section~\ref{external_resources}). 
+#### Model Selection and Experimental Settings
+Identify an appropriate architecture for this NER task. You can experiment with established architectures like Logistic Regression, Support Vector Machine, and Naive Bayes or propose a custom design. It would help if you justified your choice by providing reasoning for your choice of architecture. 
 
-#### Results Analysis
-Interpret the results, identifying strengths and potential weaknesses in the model's prediction of different keywords. You should Perform an error analysis by examining cases where the model makes incorrect predictions. This will help you understand if specific keywords are more challenging to classify.
+#### Results Analysis
+Interpret the results, identifying strengths and potential weaknesses in the model's prediction of different categories. You should Perform an error analysis by examining cases where the model makes incorrect predictions. This will help you understand if specific categories are more challenging to classify.
 
-#### GitHub Repository
+#### GitHub Repository
 Please provide a GitHub repository containing your code for this project. The repository should be organized and include a README.md explaining the project, setup instructions, and how to run the code. Ensure the code is executable, documentation is clear, and experiments are reproducible (use fixed random seeds to save any essential model checkpoints or outputs).
 
-#### Timeline
+#### Timeline
 
 The project will end with the system report submission on Monday, December 16th (11:59 pm). Make sure to finalize and upload your GitHub repository by this date, ensuring all code is executable, well-documented, and reproducible. 
-
-
-### External Resources
-
-
-\begin{itemize}
-    \item An introduction to multi-label text classification: \url{https://medium.com/analytics-vidhya/an-introduction-to-multi-label-text-classification-b1bcb7c7364c};
-    \item  Hierarchical Multi-Label Classification of Scientific Documents, by~\citet{sadat-caragea-2022-hierarchical};
-    \item Extreme Multi-Label Legal Text Classification: A Case Study in EU Legislation, by~\citet{chalkidis-etal-2019-extreme};
-    \item Evaluating Extreme Hierarchical Multi-label Classification, by \citet{amigo-delgado-2022-evaluating}.
-    \item A Survey on Recent Advances in Hierarchical Multi-label Text Classification, by \citet{liu2023recentadvanceshierarchicalmultilabel}
-\end{itemize}
-
